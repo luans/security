@@ -1,29 +1,31 @@
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-      <div class="navbar-header">
-          <a class="navbar-brand">
-              Teste
-          </a>
-          <span class="navbar-brand">Angular + Bootstrap</span>
-      </div>
-      <ul class="nav navbar-nav">
-          <li class="active"><a href="#">
-            Link <span class="sr-only">(current)</span>
-          </a></li>
-          <li><a href="#">Link</a></li>
-          <li class="dropdown" dropdown> <!-- {1} -->
-              <a dropdownToggle role="button"> <!-- {2} -->
-                Dropdown <span class="caret"></span></a>
-              <ul *dropdownMenu class="dropdown-menu"> <!-- {3} -->
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">Separated link</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">One more separated link</a></li>
-              </ul>
-          </li>
-      </ul>
-  </div>
-</nav>
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+  <h5 class="my-0 mr-md-auto font-weight-normal">Company name</h5>
+  <nav class="my-2 my-md-0 mr-md-3">
+    <a class="p-2 text-dark" href="#">Features</a>
+    <a class="p-2 text-dark" href="#">Enterprise</a>
+    <a class="p-2 text-dark" href="#">Support</a>
+    <a class="p-2 text-dark" href="#">Pricing</a>
+  </nav>
+  <a class="btn btn-outline-primary" href="#">Sign up</a>
+</div>
+
+<button type="button" class="btn btn-primary" 
+        tooltip="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+Button with tooltip
+</button>
+
+<button type="button" class="btn btn-info" 
+        (click)="openModal(template)">Create template modal</button>
+
+<ng-template #template>
+    <div class="modal-header">
+        <h4 class="modal-title pull-left">Modal</h4>
+        <button type="button" class="close pull-right" 
+                aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+    <div class="modal-body">
+        This is a modal.
+    </div>
+</ng-template>
