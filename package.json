@@ -1,0 +1,22 @@
+{
+  "name": "security",
+  "version": "1.0.0",
+  "description": "# Configurações",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luans/security.git"
+  },
+  "author": "luanlopes94",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luans/security/issues"
+  },
+  "homepage": "https://github.com/luans/security#readme",
+  "dependencies": {
+    "angular": "^1.7.0"
+  }
+}
